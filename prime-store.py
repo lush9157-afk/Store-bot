@@ -47,7 +47,7 @@ class EnterpriseConfig:
         # Bot Identity
         self.BOT_NAME = "🌟 Prime Assistant Enterprise"
         self.BOT_VERSION = "6.0.0"
-        self.DEVELOPER_ID = int(os.getenv("DEVELOPER_ID", "123456789"))
+        self.DEVELOPER_ID = int(os.getenv("DEVELOPER_ID", "953281846383366145"))
         
         # Security
         self.ENCRYPTION_KEY = Fernet.generate_key()
@@ -288,7 +288,7 @@ class EnterpriseDatabase:
                         (id, category, name, description, price, original_price, cost_price, stock, max_stock, min_stock, 
                          warranty, features, images, tags, is_active, is_featured, is_premium, rating, sales_count, delivery_time, 
                          requirements, auto_restock, profit_margin, view_count, seo_keywords)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     ''', product)
                 
                 await db.commit()
